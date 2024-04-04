@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inserimento recensione</title>
+
+		<style>
+			/* Stile per la pagina di inserimento recensione */
+
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: white ;
+			}
+
+			.container {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 20px;
+				
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			form {
+				background-color: pink;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				color: #333;
+			}
+
+			input[type="text"],
+			textarea {
+				width: 96%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-family: Arial, sans-serif;
+			}
+
+			input[type="number"] {
+				width: 50px;
+			}
+
+			input[type="submit"] {
+				background-color: #4caf50;
+				color: #fff;
+				border: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			input[type="submit"]:hover {
+				background-color: #45a049;
+			}
+
+			a {
+				display: block;
+				margin-top: 20px;
+				color: #333;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #666;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>inserisci una recensione</h1>
+			<form action="processi/recensione.php" method="post">
+				<label for="ricevente">Chi stai recensendo?</label>
+				<input type="text" name="riceventeNome" id="riceventeNome" placeholder="nome ricevente"/>
+
+				<input type="text" name="riceventeCognome" id="riceventeCognome" placeholder="cognome ricevente"/>
+
+				<label for="giudizio">Giudizio</label>
+				<textarea name="giudizio" id="giudizio" cols="30" rows="10"></textarea>
+
+				<label for="voto">Voto</label>
+				<input type="number" name="voto" id="voto" min="1" max="5" />
+				<br />
+				<br />
+				<input type="submit" value="invia recensione" />
+			</form>
+
+			<a href="../../../index.php">Home page</a>
+			<a href="visualizzaRecensioni.html">Visualizza recensioni</a>
+		</div>
+	</body>
+</html>
