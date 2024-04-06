@@ -4,79 +4,82 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Inserimento recensione</title>
+<style>
+	body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-		<style>
-			/* Stile per la pagina di inserimento recensione */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Aumenta la larghezza del form */
+    text-align: center;
+}
 
-			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				background-color: white ;
-			}
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
 
-			.container {
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 20px;
-				
-			}
+label {
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
 
-			h1 {
-				color: #333;
-			}
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-			form {
-				background-color: pink;
-				padding: 20px;
-				border-radius: 5px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			}
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100px;
+}
 
-			label {
-				display: block;
-				margin-bottom: 5px;
-				color: #333;
-			}
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
 
-			input[type="text"],
-			textarea {
-				width: 96%;
-				padding: 10px;
-				margin-bottom: 10px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				font-family: Arial, sans-serif;
-			}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-			input[type="number"] {
-				width: 50px;
-			}
+.form-group {
+    margin-bottom: 20px;
+}
 
-			input[type="submit"] {
-				background-color: #4caf50;
-				color: #fff;
-				border: none;
-				padding: 10px 20px;
-				border-radius: 5px;
-				cursor: pointer;
-			}
-
-			input[type="submit"]:hover {
-				background-color: #45a049;
-			}
-
-			a {
-				display: block;
-				margin-top: 20px;
-				color: #333;
-				text-decoration: none;
-			}
-
-			a:hover {
-				color: #666;
-			}
-		</style>
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 10px;
+}
+</style>
+		
 	</head>
 	<body>
 		<div class="container">

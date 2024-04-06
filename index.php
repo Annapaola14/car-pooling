@@ -11,93 +11,105 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Pooling home page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            height: 100vh;
-            background-color: pink;
-        }
+       body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
 
-        header {
-            background-color: #007bff;
-            padding: 20px;
-            text-align: center;
-        }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-        header a:hover {
-            color: #ccc;
-        }
+h1 {
+  margin: 0;
+}
 
-        main {
-            padding: 20px;
-        }
+nav {
+  margin-top: 20px;
+}
 
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin: 0 auto;
-            
-        }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
-        label {
-            margin-bottom: 5px;
-        }
+nav a:hover {
+  text-decoration: underline;
+}
 
-        h1{
-            color: white;
-        }
+.immagine_principale {
+  text-align: center;
+  margin-top: 20px;
+}
 
-        input[type="text"],
-        input[type="date"],
-        input[type="number"] {
-            margin-bottom: 15px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 16px;
-            
-        }
+.immagine_principale img {
+  max-width: 100%;
+  height: auto;
+}
 
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            margin-top: 10px;
-        }
+main {
+  margin: 20px;
+}
 
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
 
-        .error-message {
-            color: #ff0000;
-            margin-top: 8px;
-            font-size: 14px;
-        }
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 
-        img {
-            width: 40%;
-            height: 40%;
-            margin-top: 25px;
-        }
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-        .immagine_principale {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
     </style>
 </head>
 
@@ -129,7 +141,7 @@ session_start();
         </header>
         <main>
 
-            <form action="static/pages/area_riservata/ricercaViaggio.php" method="post">
+            <form action="static/pages/area_riservata/ricercaViaggio.php" method="post" class="container">
                 <label for="partenza">Partenza</label>
                 <input type="text" name="partenza" id="partenza" required>
                 <label for="arrivo">Arrivo</label>

@@ -14,7 +14,8 @@ session_start();
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			background-color: pink;
+			background-color:  #0056b3;
+;
 		}
 
 		header {

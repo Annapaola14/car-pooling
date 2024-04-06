@@ -13,16 +13,89 @@ session_start();
     <link rel="stylesheet" href="static/css/style.css">
 
     <style>
-        body{
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            background-color: pink;
-        }
+header {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
 
-        img{
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
 
-        height: 400px; 
-        width: 400px;
-        }
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.about-us {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #333333;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us li {
+    margin-bottom: 10px;
+}
+
+.about-us img {
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+}
     </style>
 </head>
 

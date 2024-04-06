@@ -13,63 +13,62 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina di pubblicazione</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #007bff;
-            margin: 0;
-            padding: 0;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .container {
-            width: 80%;
-            /* Imposta la larghezza desiderata */
-            max-width: 400px;
-            /* Imposta la larghezza massima */
-            margin: 50px auto;
-            background-color: pink;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Aumenta la larghezza del form */
+    text-align: center;
+}
 
-        .container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
+label {
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
 
-        label {
-            margin-bottom: 8px;
-        }
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-        input[type="date"],
-        input[type="number"],
-        input[type="checkbox"],
-        input[type="text"],
-        input[type="submit"] {
-            margin-bottom: 16px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            width: 100%;
-            /* Imposta la larghezza al 100% */
-        }
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-        input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+.form-group {
+    margin-bottom: 20px;
+}
     </style>
 </head>
 
